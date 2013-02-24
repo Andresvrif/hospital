@@ -1,0 +1,1 @@
+Código de ejemplo para: http://csilgoortiz.com/2012/04/05/comprendiendo-spring-2-el-contenedor/
