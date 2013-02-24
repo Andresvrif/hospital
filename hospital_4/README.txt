@@ -1,0 +1,1 @@
+Código de ejemplo para: http://csilgoortiz.com/2012/04/24/comprendiendo-spring-5-configuracion-basada-en-anotaciones-y-basada-en-java/

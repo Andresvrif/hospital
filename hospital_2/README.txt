@@ -1,0 +1,1 @@
+Código de ejemplo para: http://csilgoortiz.com/2012/04/09/comprendiendo-spring-3-el-ciclo-de-vida-de-los-beans/

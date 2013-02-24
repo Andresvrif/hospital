@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/jdbc     http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <context:annotation-config/>
+
+    <bean id="patientService" class="com.hospital.services.impl.PatientServiceImpl">
+        <constructor-arg ref="patientDao"/>
+        <property name="requiredString" value="${requiredStringVar}"/>
+    </bean>
+
+    <bean id="patientDao" class="com.hospital.daos.jdbc.PatientDaoJdbc">
+        <constructor-arg ref="dataSource"/>
+    </bean>
+
+    <jdbc:embedded-database id="dataSource" type="HSQL">
+        <jdbc:script location="classpath:schema.sql"/>
+        <jdbc:script location="classpath:test-data.sql"/>
+    </jdbc:embedded-database>
+
+    <!-- BeanFactoryPostProcessor PropertyPlaceholderConfigurer -->
+    <context:property-placeholder location="classpath:example.properties"/>
+
+</beans>
