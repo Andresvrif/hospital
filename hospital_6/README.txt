@@ -1,0 +1,1 @@
+Código de ejemplo para: http://csilgoortiz.com/2013/03/03/programacion-orientada-a-aspectos-aop-en-spring/
