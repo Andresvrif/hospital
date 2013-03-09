@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>hospital</groupId>
-    <artifactId>hospital_6</artifactId>
+    <artifactId>hospital_7</artifactId>
     <version>1.0.0</version>
     <name>hospital_6</name>
-    <description>AOP Example</description>
+    <description>JDBC Example</description>
 
     <!-- Shared version number properties -->
     <properties>
